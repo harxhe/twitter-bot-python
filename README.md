@@ -11,8 +11,8 @@ This bot automatically posts iconic quotes from Game of Thrones on Twitter at re
 ## Installation and Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/twitter-bot.git
-   cd twitter-bot
+   git clone https://github.com/harxhe/twitter-bot-python.git
+   cd twitter-bot-python
    ```
 2. Install dependencies:
    ```bash
@@ -29,12 +29,8 @@ This bot automatically posts iconic quotes from Game of Thrones on Twitter at re
      ```
 4. Run the bot manually:
    ```bash
-   python bot.py
+   python main.py
    ```
 5. Deploy on PythonAnywhere:
    - Schedule the script to run at a fixed interval using the built-in task scheduler.
-
-## Credits
-- Quotes sourced from [Game of Thrones XYZ API](https://xyzapi.com).
-- Built using `tweepy` and Python.
 
