@@ -34,3 +34,5 @@ This bot automatically posts iconic quotes from Game of Thrones on Twitter at re
 5. Deploy on PythonAnywhere:
    - Schedule the script to run at a fixed interval using the built-in task scheduler.
 
+Make sure to check it out
+[Twitter link]([https://x.com/dailyquotes339]) 
