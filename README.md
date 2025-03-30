@@ -1,4 +1,4 @@
-# Game of Thrones Twitter Bot
+# Twitter Bot Using Python
 
 This bot automatically posts iconic quotes from Game of Thrones on Twitter at regular intervals.
 
