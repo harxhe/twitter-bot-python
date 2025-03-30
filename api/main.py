@@ -31,16 +31,17 @@ def get_quote():
         print(f"Error fetching quote: {e}")
         return "A Lannister always pays his debts."  # fallback quote
 
-def create_tweet(client,tweet_text):
+def create_tweet():
+    client=get_client()
+    quote= get_quote()
+
     try:
-        client.create_tweet(text=tweet_text)
-        print(f"Tweet posted: {tweet_text}")
+        client.create_tweet(text=quote)
+        print(f"Tweet posted: {quote}")
+        return {"status": "success", "tweet": quote}
     except Exception as e:
         print(f"Error posting tweet: {e}")
+        return {"status": "error", "message": str(e)}
 
-
-
-if __name__ == "__main__":
-    client = get_client()
-    quote = get_quote()
-    create_tweet(client, quote)
+def handler(request):
+    return create_tweet()
